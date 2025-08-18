@@ -342,6 +342,8 @@ section {
 /* Experience Section */
 .experience {
     background-color: var(--bg-secondary);
+    width: 100%;
+    overflow: hidden;
 }
 
 .timeline {
