@@ -540,6 +540,10 @@ section {
 }
 
 @media (min-width: 768px) {
+    .timeline {
+        max-width: 100%;
+    }
+
     .nav-links {
         display: flex;
     }
@@ -553,25 +557,25 @@ section {
     }
     
     .timeline::before {
-        left: 50%;
+        left: 40%;
     }
     
     .timeline-dot {
-        left: 50%;
+        left: 40%;
     }
     
     .timeline-date {
         position: absolute;
         top: 0;
-        left: 0;
+        left: calc(-8%);
         width: calc(50% - 40px);
         text-align: right;
         padding-right: 30px;
     }
     
     .timeline-content {
-        left: calc(50% + 40px);
-        width: calc(50% - 40px);
+        left: calc(40% + 40px);
+        max-width: calc(50% - 40px);
     }
 }
 
