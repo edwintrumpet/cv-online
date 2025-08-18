@@ -5,7 +5,7 @@ Este proyecto es un sitio web que muestra la información laboral y profesional 
 ## Características
 
 - Diseño moderno y atractivo
-- Totalmente responsive (adaptable a dispositivos móviles)
+- Totalmente responsive (first mobile adaptable a pantallas desktop)
 - Modo oscuro/claro
 - Animaciones y transiciones suaves
 - Visualización de habilidades con barras de progreso
