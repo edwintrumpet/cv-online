@@ -1,47 +1,47 @@
 # CV Online - Edwin García
 
-Este proyecto es un sitio web que muestra la información laboral y profesional de Edwin García, funcionando como un CV online con un diseño moderno e interactivo.
+This project is a website that displays Edwin García's professional and work information, functioning as an online CV with a modern and interactive design.
 
-## Características
+## Features
 
-- Diseño moderno y atractivo
-- Totalmente responsive (first mobile adaptable a pantallas desktop)
-- Modo oscuro/claro
-- Animaciones y transiciones suaves
-- Visualización de habilidades con barras de progreso
-- Timeline interactivo para la experiencia laboral
+- Modern and attractive design
+- Fully responsive (mobile-first, adaptable to desktop screens)
+- Dark/light mode
+- Smooth animations and transitions
+- Skills visualization with progress bars
+- Interactive timeline for work experience
 
-## Tecnologías utilizadas
+## Technologies Used
 
 - HTML5
-- CSS3 (con variables CSS para temas)
+- CSS3 (with CSS variables for themes)
 - JavaScript (vanilla)
-- Font Awesome para iconos
+- Font Awesome for icons
 - Google Fonts
 
-## Estructura del proyecto
+## Project Structure
 
 ```plain
-├── index.html          # Estructura principal del sitio
-├── styles.css          # Estilos y diseño visual
-├── script.js           # Funcionalidades interactivas
-└── README.md           # Documentación del proyecto
+├── index.html          # Main site structure
+├── styles.css          # Styles and visual design
+├── script.js           # Interactive functionalities
+└── README.md           # Project documentation
 ```
 
-## Cómo usar
+## How to Use
 
-1. Clona este repositorio o descarga los archivos
-2. Abre el archivo `index.html` en tu navegador web
-3. También puedes desplegar este sitio en cualquier servicio de hosting estático como GitHub Pages, Netlify, Vercel, etc.
+1. Clone this repository or download the files
+2. Open the `index.html` file in your web browser
+3. You can also deploy this site on any static hosting service such as GitHub Pages, Netlify, Vercel, etc.
 
-## Personalización
+## Customization
 
-Para personalizar este CV online con tu propia información:
+To customize this online CV with your own information:
 
-1. Edita el archivo `index.html` para cambiar la información personal, experiencia, habilidades, etc.
-2. Modifica los colores y estilos en `styles.css` según tus preferencias
-3. Ajusta las animaciones y funcionalidades en `script.js` si es necesario
+1. Edit the `index.html` file to change personal information, experience, skills, etc.
+2. Modify colors and styles in `styles.css` according to your preferences
+3. Adjust animations and functionalities in `script.js` if necessary
 
-## Licencia
+## License
 
-Este proyecto está disponible como código abierto bajo la licencia MIT.
+This project is available as open source under the MIT license.
