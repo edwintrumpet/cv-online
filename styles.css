@@ -84,7 +84,7 @@ body {
 }
 
 .nav-links {
-    display: flex;
+    display: none;
     list-style: none;
 }
 
@@ -136,7 +136,7 @@ body {
 
 /* Hero Section */
 .hero {
-    padding: 150px 0 80px;
+    padding: 120px 0 60px;
     background-color: var(--bg-secondary);
     position: relative;
     overflow: hidden;
@@ -163,7 +163,7 @@ body {
 
 .name {
     font-family: var(--font-heading);
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 10px;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -173,7 +173,7 @@ body {
 }
 
 .title {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: var(--text-light);
     margin-bottom: 20px;
@@ -182,7 +182,8 @@ body {
 .location-contact {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
@@ -237,7 +238,7 @@ section {
 
 .section-title {
     font-family: var(--font-heading);
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 40px;
     text-align: center;
@@ -262,14 +263,14 @@ section {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px;
 }
 
 .skill-category {
     background-color: var(--bg-secondary);
     border-radius: 10px;
-    padding: 25px;
+    padding: 20px;
     box-shadow: 0 5px 15px var(--shadow-color);
     transition: var(--transition);
 }
@@ -353,7 +354,7 @@ section {
     content: '';
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 30px;
     transform: translateX(-50%);
     width: 3px;
     height: 100%;
@@ -368,7 +369,7 @@ section {
 .timeline-dot {
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 30px;
     transform: translateX(-50%);
     width: 20px;
     height: 20px;
@@ -378,21 +379,21 @@ section {
 }
 
 .timeline-date {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: calc(50% - 40px);
-    text-align: right;
-    padding-right: 30px;
+    position: relative;
+    width: 100%;
+    left: 70px;
+    text-align: left;
+    padding-right: 0;
+    margin-bottom: 10px;
     font-weight: 500;
     color: var(--primary-color);
 }
 
 .timeline-content {
     position: relative;
-    left: calc(50% + 40px);
-    width: calc(50% - 40px);
-    padding: 25px;
+    left: 70px;
+    width: calc(100% - 70px);
+    padding: 20px;
     background-color: var(--bg-color);
     border-radius: 10px;
     box-shadow: 0 5px 15px var(--shadow-color);
@@ -442,7 +443,7 @@ section {
 .education-item {
     background-color: var(--bg-secondary);
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px;
     box-shadow: 0 5px 15px var(--shadow-color);
     transition: var(--transition);
     position: relative;
@@ -505,23 +506,9 @@ section {
 }
 
 /* Responsive Design */
-@media (max-width: 992px) {
-    .name {
-        font-size: 2.5rem;
-    }
-    
-    .title {
-        font-size: 1.3rem;
-    }
-    
-    .skills-container {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
+@media (min-width: 576px) {
+    .hero {
+        padding: 150px 0 80px;
     }
     
     .name {
@@ -532,52 +519,70 @@ section {
         font-size: 1.2rem;
     }
     
-    .timeline::before {
-        left: 30px;
-    }
-    
-    .timeline-dot {
-        left: 30px;
-    }
-    
-    .timeline-date {
-        position: relative;
-        width: 100%;
-        left: 70px;
-        text-align: left;
-        padding-right: 0;
-        margin-bottom: 10px;
-    }
-    
-    .timeline-content {
-        width: calc(100% - 70px);
-        left: 70px;
-    }
-}
-
-@media (max-width: 576px) {
-    .hero {
-        padding: 120px 0 60px;
-    }
-    
-    .name {
-        font-size: 1.8rem;
-    }
-    
-    .title {
-        font-size: 1.1rem;
-    }
-    
     .location-contact {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row;
+        gap: 20px;
     }
     
     .section-title {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
     }
     
-    .skill-category, .timeline-content, .education-item {
-        padding: 20px;
+    .skill-category, .timeline-content {
+        padding: 25px;
+    }
+
+    .education-item {
+        padding: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
+    
+    .name {
+        font-size: 2.5rem;
+    }
+    
+    .title {
+        font-size: 1.3rem;
+    }
+    
+    .timeline::before {
+        left: 50%;
+    }
+    
+    .timeline-dot {
+        left: 50%;
+    }
+    
+    .timeline-date {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(50% - 40px);
+        text-align: right;
+        padding-right: 30px;
+    }
+    
+    .timeline-content {
+        left: calc(50% + 40px);
+        width: calc(50% - 40px);
+    }
+}
+
+@media (min-width: 992px) {
+    .name {
+        font-size: 3rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 }
