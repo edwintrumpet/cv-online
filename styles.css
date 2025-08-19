@@ -120,18 +120,31 @@ body {
     width: 100%;
 }
 
-.theme-toggle {
+.toggle-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.theme-toggle,
+.lang-toggle {
+    text-decoration: none;
     background: none;
     border: none;
     color: var(--text-color);
     font-size: 1.2rem;
     cursor: pointer;
     transition: var(--transition);
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.theme-toggle:hover {
-    color: var(--primary-color);
-    transform: rotate(15deg);
+.theme-toggle:hover,
+.lang-toggle:hover {
+    background-color: var(--bg-secondary);
+    transform: scale(1.1);
 }
 
 /* Hero Section */
