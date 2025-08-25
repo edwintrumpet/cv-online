@@ -1,25 +1,35 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
 import GlowLineSeparator from '@/components/ui/separator/GlowLineSeparator.astro';
-const pageTitle = 'About Me';
-const pageDescription = 'Learn more about my background and approach to software engineering.';
+const pageTitle = 'Sobre mí';
+const pageDescription = 'Aprende más sobre mí';
+const pubDate = new Date(2025, 7, 25, 0, 0, 0, 0)
+const updatedDate = new Date(2025, 7, 25, 0, 0, 0, 0)
+const readingTimeMin = 1
 ---
 
-<Layout title={pageTitle} description={pageDescription} pubDate={new Date()} showHeader={false}>
+<Layout title={pageTitle} description={pageDescription} author='Edwin García' pubDate={pubDate} updatedDate={updatedDate} showHeader={false} readingTimeMin={readingTimeMin}>
   <p>
-    Hey! I'm a senior software engineer who loves designing reliable systems and shipping products that feel great to use.
+    ¡Hola! Soy desarrollador backend con más de 5 años de experiencia, especializado en Go.
+    Pero también tengo fuertes conocimientos en frontend.
   </p>
   <p>
-    I work across the stack with TypeScript, Node.js, React/Next.js, and PostgreSQL. I care deeply about readable code,
-    strong tests, and observability. My approach: ship small, iterate quickly, measure outcomes.
+    Mis primeros pasos en el desarrollo de software los hice en frontend y parte de mi
+    experiencia laboral fue como fullstack developer, donde tuve la oportunidad de llevar
+    de principio a fin proyectos completos.
   </p>
   <p>
-    Recent highlights include leading a migration from a monolith to well‑scoped services, improving p95 latency,
-    and introducing CI/CD with preview environments and quality gates.
+    Actualmente me he enfocado al backend específicamente con Golang donde he trabajado
+    en la construcción de microservicios, APIs REST y sistemas escalables en la nube.
   </p>
   <p>
-    Outside of feature work, I enjoy mentoring, documentation, and building design‑system components that make teams faster.
-    Always learning—and always happy to collaborate on meaningful problems.
+    Me enfoco en escribir código limpio, aplicar buenas prácticas y colaborar activamente
+    con equipos multidisciplinarios. Siempre buscando crecer técnica y profesionalmente.
+  </p>
+  <p>
+    Creo que la mejor forma de crecer personal y profesionalmente es compartir mis experiencias
+    y conocimientos. Por eso he creado mi blog para compartir con la comunidad algunas
+    observaciones y recibir retroalimentación.
   </p>
 
   <GlowLineSeparator />

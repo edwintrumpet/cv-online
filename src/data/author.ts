@@ -1,11 +1,9 @@
-import avatar from '../assets/images/sample-avatar.jpg';
+import avatar from '../assets/images/edwin-avatar.jpg';
 
 export const author = {
-  name: 'Site Author',
+  name: 'Edwin García',
   avatar,
   url: '#',
 };
 
 export type Author = typeof author;
-
-
