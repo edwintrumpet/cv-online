@@ -1,9 +1,4 @@
-import PhoenixIcon from '../assets/logos/Phoenix-logo.svg?raw';
-import N8nIcon from '../assets/logos/N8n-logo.svg?raw';
-import SupabaseIcon from '../assets/logos/Supabase-logo.svg?raw';
-import PosthogIcon from '../assets/logos/posthog-logo.svg?raw';
 import PythonIcon from '../assets/logos/Python-logo.svg?raw';
-import TailwindIcon from '../assets/logos/Tailwind-logo.svg?raw';
 
 
 export const projects = [
@@ -13,7 +8,7 @@ export const projects = [
 		description: "Event‑driven workflows for data sync, notifications, and back‑office automation. Custom nodes, secrets management, retries, and metrics.",
 		ctaText: "View Repo →",
 		ctaLink: "#",
-		icon: N8nIcon
+		icon: PythonIcon
 	},
 	{
 		title: "SaaS API Starter (Auth, Billing, RBAC)",
@@ -21,7 +16,7 @@ export const projects = [
 		description: "Production‑ready REST/GraphQL API with JWT auth, role‑based access, Stripe subscriptions, and rate‑limited endpoints.",
 		ctaText: "Get Source < / >",
 		ctaLink: "#",
-		icon: SupabaseIcon
+		icon: PythonIcon
 	},
 	{
 		title: "Realtime Chat Service",
@@ -29,7 +24,7 @@ export const projects = [
 		description: "Low‑latency chat with channels, presence, and backpressure handling. Includes load tests and horizontal scaling notes.",
 		ctaText: "Live Demo →",
 		ctaLink: "#",
-		icon: PhoenixIcon
+		icon: PythonIcon
 	},
 	{
 		title: "Product Analytics Pipeline",
@@ -37,7 +32,7 @@ export const projects = [
 		description: "Event ingestion, batching, and replay; user properties and cohorts; dashboards for funnels, retention, and feature adoption.",
 		ctaText: "Read Case Study →",
 		ctaLink: "#",
-		icon: PosthogIcon
+		icon: PythonIcon
 	},
 	{
 		title: "Data Ingestion & ETL",
@@ -53,6 +48,6 @@ export const projects = [
 		description: "Accessible UI kit with tokens, theming, and testing. Published as a versioned package with changelogs and docs.",
 		ctaText: "Docs →",
 		ctaLink: "#",
-		icon: TailwindIcon
+		icon: PythonIcon
 	},
 ];
