@@ -26,41 +26,44 @@ import figmaLogo from '../assets/logos/Figma-logo.svg';
 ---
 
 <!doctype html>
-<html lang="en" data-theme="dark" class="dark">
+<html lang="es" data-theme="dark" class="dark">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <!-- JSON-LD: Organization -->
     <script type="application/ld+json" set:html={JSON.stringify({
       '@context': 'https://schema.org',
-      '@type': 'Organization',
-      name: 'Site Author',
+      '@type': 'Person',
+      name: 'Edwin García',
       url: new URL('/', Astro.site).toString(),
       logo: new URL('/favicon.svg', Astro.site).toString(),
       sameAs: [
-        'https://x.com/guihubie',
-        'https://www.linkedin.com/in/guilherme-hubie/',
+        'https://www.linkedin.com/in/edwin-garcia-dev',
       ],
     })} />
 	</head>
 	<body>
 		<Header />
 		<main>
+      <!-- TODO remove negative in showCTA to show links to portfolio and blog -->
       <HeroSection
-        title="Your Headline Goes Here!"
-        subtitle="I build softwares that brings you loyal subscribers."
-        showCTA
-        primaryCTA={{ text: 'View Projects', href: '/portfolio' }}
-        secondaryCTA={{ text: 'Read Blog', href: '/blog' }}
+        title="Edwin García"
+        subtitle="Desarrollador backend especializado en Go"
+        !showCTA
+        primaryCTA={{ text: 'Ver proyectos', href: '/portfolio' }}
+        secondaryCTA={{ text: 'Leer Blog', href: '/blog' }}
       />
      
 
     <section class="py-6">
       <ArrowSeparator />
-      <SkillsSection title="Skills & Tools" skills={skills} />   
+      <SkillsSection title="Habilidades y herramientas" skills={skills} />   
       <ArrowSeparator />
-      <WorkExperience title="Work Experience" items={work} />
-      <ArrowSeparator />
-      <Studies title="Studies" items={studies} />
+      <WorkExperience title="Experiencia laboral" items={work} />
+      <!-- TODO
+       enable studies
+        -->
+      <!-- <ArrowSeparator />
+      <Studies title="Estudios" items={studies} /> -->
       <GlowLineSeparator />
     </section>
 		</main>

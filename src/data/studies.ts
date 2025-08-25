@@ -1,27 +1,29 @@
 export const studies = [
   {
-    title: "B.S. in Computer Science",
-    institution: "State University",
+    title: "Ingeniería Eléctrica",
+    institution: "Universidad Nacional de Colombia",
     description:
-      "Core CS foundations: data structures, algorithms, operating systems, networking, and databases; team capstone in web systems.",
+      `Análisis, diseño e implementación de sistemas de energía eléctrica con fuertes bases en ciencias`,
     tags: [
-      "Algorithms",
-      "Data Structures",
-      "Operating Systems",
-      "Databases",
-      "Networking",
+      "Ciencias básicas",
+      "Matemáticas",
+      "Física",
+      "Ciencia de materiales",
+      "Circuitos eléctricos",
+      "Hardware",
+      "Programación",
     ],
   },
   {
-    title: "M.S. in Software Engineering",
-    institution: "Tech Institute",
+    title: "Desarrollo fullstack",
+    institution: "Platzi",
     description:
-      "Focus on distributed systems, testing strategies, and cloud architecture; thesis on resilience patterns in microservices.",
+      `Desarrollo de productos de base tecnológica. Preparación en diseño del producto y
+      construcción backend y frontend.`,
     tags: [
-      "Distributed Systems",
-      "Cloud Architecture",
-      "Testing",
-      "Microservices",
+      "frontend",
+      "backend",
+      "diseño",
     ],
   },
 ];
