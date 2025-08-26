@@ -36,14 +36,6 @@
       current = current === 'dark' ? 'light' : 'dark';
       localStorage.setItem(storageKey, current);
       applyTheme(current);
-
-      headerLogo = document.getElementById("header-logo")
-
-      if (current == 'light') {
-        headerLogo.src = "/favicon.png"
-      } else {
-        headerLogo.src = "/favicon-dark.png"
-      }
     });
   })();
 </script>
