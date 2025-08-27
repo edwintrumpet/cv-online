@@ -15,7 +15,7 @@ type Props = BlogData & { showHeader?: boolean; prevPost?: { id: string; title: 
 const { title, description, pubDate, updatedDate, heroImage, showHeader = true, prevPost = null, nextPost = null, readingTimeMin = 0 } = Astro.props as Props;
 ---
 
-<html lang="en" data-theme="dark" class="dark">
+<html lang="es" data-theme="dark" class="dark">
 	<head>
 		<BaseHead title={title} description={description} image={heroImage} />
 		<meta property="og:type" content="article" />
