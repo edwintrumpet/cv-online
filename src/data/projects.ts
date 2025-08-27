@@ -1,7 +1,23 @@
-import PythonIcon from '../assets/logos/Python-logo.svg?raw';
+import GoIcon from '../assets/logos/Go-logo.svg?raw';
 
 
 export const projects = [
+	{
+		title: "Numaris (rastreo satelital, monitoreo y telemetría)",
+		techStack: "Go • AWS",
+		description: "Numaris provee soluciones de seguridad y productividad para el transporte. Yo contribuí en la actualización en tiempo real de los modelos de los dispositivos que proporcionan las mediciones.",
+		ctaText: "Ver sitio web →",
+		ctaLink: "https://www.numaris.com/",
+		icon: GoIcon
+	},
+	{
+		title: "Boletia",
+		techStack: "Go • AWS • PostgresQL • Redis",
+		description: "Boletia es una plataforma en la que organizadores crean eventos y ponen a la venta sus boletos. Yo contribuí en la plataforma para organizadores, dando mantenimiento y creando funcionalidades nuevas como la opción de pago a meses sin intereses.",
+		ctaText: "Ver sitio web →",
+		ctaLink: "https://boletia.com/",
+		icon: GoIcon
+	},
 	// {
 	// 	title: "Workflow Automation Orchestrator (n8n)",
 	// 	techStack: "n8n • Node.js • TypeScript • PostgreSQL",
